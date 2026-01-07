@@ -1,0 +1,885 @@
+ * {
+     margin: 0;
+     padding: 0;
+
+ }
+
+ body {
+     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+     overflow-x: hidden;
+
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden !important;
+     width: 100% !important;
+     position: relative;
+
+ }
+
+ img,
+ div,
+ ul,
+ li {
+     max-width: 100% !important;
+ }
+
+ header {
+     position: fixed;
+     height: 6vh;
+     width: 100vw;
+     background-color: #F5F5F5;
+     z-index: 1;
+
+ }
+
+ .logo a img {
+     position: relative;
+     display: inline-block;
+     height: 2.5vh;
+     width: 1.25vw;
+     top: 1.5vh;
+     left: 15vw;
+ }
+
+ .nav-icons {
+     height: 60px;
+     align-items: center;
+     gap: 10px;
+     position: relative;
+     display: inline-block;
+     left: 200px;
+     color: #000000ad;
+     bottom: 52px;
+     left: 76%;
+     font-size: 15px;
+     cursor: pointer;
+ }
+
+ #searchInput {
+     width: 0;
+     opacity: 0;
+     padding: 5px 10px;
+     transition: all 0.2s ease;
+     background: transparent;
+     color: black;
+     border: none;
+     border-radius: 4px;
+     z-index: 999;
+ }
+
+ #searchInput.active {
+     width: 200px;
+     opacity: 1;
+     pointer-events: auto;
+
+ }
+
+ ul {
+     text-align: center;
+     text-decoration: none;
+ }
+
+ li {
+     display: inline;
+     position: relative;
+     bottom: 1.5vh;
+     font-size: 12.2px;
+     font-weight: 525;
+     right: 4vw;
+     line-height: 1;
+     letter-spacing: -.01em;
+     margin: 15px;
+     color: #000000b5;
+     cursor: pointer;
+     transition: 1s ease;
+     text-decoration: none;
+ }
+
+ li:hover {
+     color: black;
+     transition: 0.5s ease;
+ }
+
+ .bag a img {
+     height: 18px;
+     align-items: center;
+     bottom: 29px;
+     position: relative;
+     display: inline-block;
+     left: 200px;
+
+     left: 75%;
+     font-size: 15px;
+     cursor: pointer;
+ }
+
+ .nav-icons {
+     margin-left: 3vw;
+ }
+
+ .menu img {
+     height: 20px;
+     align-items: center;
+     bottom: 15.2vh;
+     position: relative;
+     display: inline-block;
+     left: 200px;
+
+     left: 80%;
+     font-size: 15px;
+     cursor: pointer;
+     display: none;
+ }
+
+ .extra {
+     position: relative;
+     height: 8vh;
+     width: 100vw;
+     background-color: white;
+
+     animation: extra 1s 1s ease 1 forwards;
+     display: inline-block;
+
+ }
+
+ @keyframes extra {
+     from {
+         transform: translateY(0px);
+     }
+
+     to {
+         transform: translateY(6vh);
+     }
+ }
+
+ .extra p {
+     text-align: center;
+     position: relative;
+     top: 3vh;
+     font-size: 13px;
+     right: 3vw;
+     cursor: pointer;
+
+ }
+
+ .extra a {
+     cursor: pointer;
+ }
+
+ .body {
+     height: 200vh;
+     width: 100%;
+     position: relative;
+     top: 6vh;
+     background-color: #F5F5F7;
+ }
+
+ .adv {
+     display: inline-block;
+ }
+
+ span {
+     color: #1D1D1F;
+ }
+
+ h1 {
+     color: #6E6E73;
+     font-size: 48px;
+     font-weight: 600;
+     display: inline-block;
+     position: relative;
+     left: 15vh;
+     top: 6vh;
+     pointer-events: none;
+ }
+
+ .mac img {
+     height: 100px;
+     position: relative;
+     top: 100px;
+     left: 110px;
+
+ }
+
+ .mac a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 3vw;
+     top: 9vw;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+
+
+ .iphone img {
+     height: 100px;
+     position: relative;
+     left: 300px;
+     display: inline-block;
+
+
+ }
+
+ .iphone a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 12.5vw;
+     top: 2.2vw;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .ipad img {
+     height: 100px;
+     position: relative;
+     left: 460px;
+     bottom: 100px;
+     display: inline-block;
+ }
+
+ .ipad a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 23vw;
+     bottom: 10vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .iwatches img {
+     height: 100px;
+     position: relative;
+     left: 630px;
+     bottom: 28vh;
+     display: inline-block;
+ }
+
+ .iwatches a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 32.5vw;
+     bottom: 24.5vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .airpods img {
+     height: 100px;
+     position: relative;
+     left: 800px;
+     bottom: 43vh;
+     display: inline-block;
+ }
+
+ .airpods a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 45vw;
+     bottom: 39vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .airtag img {
+     height: 100px;
+     position: relative;
+     left: 950px;
+     bottom: 58vh;
+     display: inline-block;
+ }
+
+ .airtag a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 54.5vw;
+     bottom: 53.5vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .tvhome img {
+     height: 100px;
+     position: relative;
+     left: 1080px;
+     bottom: 71.5vh;
+     display: inline-block;
+ }
+
+ .tvhome a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 62.5vw;
+     bottom: 68vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .homepod img {
+     height: 100px;
+     position: relative;
+     left: 1230px;
+     bottom: 86vh;
+     display: inline-block;
+ }
+
+ .homepod a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 71.5vw;
+     bottom: 82.5vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ .accesories img {
+     height: 100px;
+     position: relative;
+     left: 1362px;
+     bottom: 101vh;
+     display: inline-block;
+ }
+
+ .accesories a {
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     left: 80vw;
+     bottom: 97vh;
+     text-decoration: none;
+     color: black;
+     display: inline-block;
+     pointer-events: none;
+ }
+
+ @media (max-width:1100px) {
+
+
+     .info ul li {
+         display: none;
+     }
+
+     header {
+         width: 100%;
+         height: 6vh;
+         z-index: 1;
+     }
+
+     .logo a img {
+         height: 3vh;
+         width: 5.5vw;
+         position: relative;
+         left: 10px;
+     }
+
+     .bag a img {
+         position: relative;
+         height: 3vh;
+         width: 6vw;
+         bottom: 2.2vh;
+         left: 75vw;
+     }
+
+     .menu img {
+         display: block;
+         position: relative;
+         bottom: 100px;
+         height: 3vh;
+         width: 6vw;
+         left: 90vw;
+     }
+
+     .nav-icons {
+         position: relative;
+         left: 20vw;
+         bottom: 40px;
+         font-size: 3vh;
+
+     }
+
+     #searchInput.active {
+         position: relative;
+         width: 140px;
+         bottom: 5px;
+         border: 2px solid black;
+     }
+
+     .extra p {
+         font-size: 10px;
+         position: relative;
+         left: 5px;
+         top: 10px;
+     }
+
+     .body {
+         width: 100%;
+         height: 200vh;
+
+     }
+
+     .adv h1 {
+         font-size: 32px;
+         position: relative;
+         left: 3vw;
+     }
+
+     .adv br {
+         display: none;
+     }
+
+     .body .newlook h1 {
+         font-size: 23px;
+         position: relative;
+         left: 20px;
+
+     }
+
+     .mainscroll .main {
+         height: 450px;
+         border-radius: 20px;
+         width: 300px;
+     }
+
+     #applepro img {
+         height: 450px;
+         border-radius: 20px;
+     }
+
+ }
+
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     max-width: 100%;
+     overflow-x: hidden;
+ }
+
+ header,
+ .body,
+ .extra {
+     width: 100% !important;
+ }
+
+ .newlook span {
+     color: #1D1D1F;
+
+ }
+
+ .newlook h1 {
+     color: #6E6E73;
+     font-size: 28px;
+     font-weight: 600;
+
+ }
+
+ .newlook {
+     position: relative;
+     display: inline-block;
+     bottom: 90vh;
+ }
+
+ .scrollcontainer {
+     display: flex;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     gap: 20px;
+     padding: 10px;
+     scrollbar-width: none;
+     position: relative;
+     top: 100px;
+
+ }
+
+ .scrollcontainer::-webkit-scrollbar {
+     display: none;
+ }
+
+ .items {
+     display: inline-block;
+     min-height: 150px;
+     width: 150px;
+     background-color: black;
+     flex-shrink: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     position: relative;
+     background-color: #F5F5F7;
+     cursor: pointer;
+     transform: scale(1);
+     transition: 0.5s;
+     left: 7vw;
+
+ }
+
+ .items:hover {
+     transform: scale(1.04);
+     transition: 0.5s;
+ }
+
+ #mac img {
+     height: 110px;
+     position: relative;
+     left: 20px;
+     bottom: 20px;
+ }
+
+ #mac p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+ }
+
+
+
+ #iphone img {
+     position: relative;
+     left: 35px;
+ }
+
+ #iphone p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+ }
+
+ #ipad img {
+     position: relative;
+
+     left: 21px;
+ }
+
+ #ipad p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+ }
+
+ #iwatches img {
+     position: relative;
+
+     left: 69px;
+ }
+
+ #iwatches p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #airpods img {
+     position: relative;
+
+     left: 39px;
+ }
+
+ #airpods p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #airtags img {
+     position: relative;
+
+     left: 40px;
+     bottom: 10px;
+ }
+
+ #airtags p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #hometv img {
+     position: relative;
+
+     left: 60px;
+     bottom: 10px;
+
+ }
+
+ #hometv p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #homepod p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #accessories p {
+     position: relative;
+     top: 67px;
+     right: 75px;
+     font-size: 20px;
+     writing-mode: horizontal-tb;
+ }
+
+ #accessories img {
+     position: relative;
+     left: 50px;
+ }
+
+ #homepod img {
+     position: relative;
+     left: 60px;
+ }
+
+ #mac,
+ #iphone,
+ #ipad,
+ #iwatches,
+ #airpods,
+ #airtags,
+ #hometv,
+ #homepod,
+ #accessories {
+     background-color: #F5F5F7;
+ }
+
+ .newlook h1 {
+
+     position: relative;
+     top: 120vh;
+     display: inline-block;
+ }
+
+ .mainscroll {
+     display: flex;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     gap: 20px;
+     padding: 10px;
+     scrollbar-width: none;
+     position: relative;
+     top: 250px;
+     background-color: #F5F5F7;
+
+ }
+
+ .mainscroll::-webkit-scrollbar {
+     display: none;
+ }
+
+ .main {
+     display: inline-block;
+     min-height: 450px;
+     width: 400px;
+     background-color: black;
+     flex-shrink: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     position: relative;
+     background-color: gray;
+     cursor: pointer;
+     transform: scale(1);
+     transition: 0.5s;
+     left: 7vw;
+     border-radius: 20px;
+     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+ }
+
+ #applepro img {
+     border-radius: 20px;
+     position: relative;
+     left: 13.5vw;
+ }
+
+
+
+ #applepro h2 {
+     color: white;
+     font-size: 30px;
+     position: relative;
+     right: 10vw;
+     bottom: 25vh;
+
+ }
+
+ #applepro h4 {
+     position: relative;
+     color: white;
+     right: 22vw;
+     bottom: 20vh;
+     background: linear-gradient(90deg, #007bff, #d42f81);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     color: transparent;
+     word-spacing: 1vh;
+ }
+
+ #applepro p {
+     position: relative;
+     color: white;
+     right: 30.5vw;
+     bottom: 15vh;
+
+     font-weight: 200;
+ }
+
+ #macpro p {
+     color: #B64400;
+     position: relative;
+     right: 150px;
+     bottom: 210px;
+ }
+
+ #macpro h2 {
+     position: relative;
+     right: 285px;
+     bottom: 150px;
+ }
+
+ #macpro img {
+     position: relative;
+
+     left: 219.8px;
+     border-radius: 20px;
+ }
+
+ #applelap img {
+     position: relative;
+     left: 186px;
+     border-radius: 20px;
+ }
+
+ #applelap h2 {
+     color: black;
+     position: relative;
+     right: 200px;
+     bottom: 180px;
+ }
+
+ #applelap h4 {
+     position: relative;
+     color: white;
+     right: 22vw;
+     bottom: 20vh;
+     background: linear-gradient(90deg, #007bff, #d42f81);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     color: transparent;
+     word-spacing: 1vh;
+ }
+
+ #applelap p {
+     position: relative;
+     color: black;
+     right: 30.5vw;
+     bottom: 16vh;
+     font-weight: 200;
+ }
+
+ @media (max-width:1100px) {
+     #applepro h2 {
+         color: white;
+
+         left: -90px;
+         font-size: 22px;
+     }
+
+     #applepro h4 {
+
+         right: 222px;
+     }
+
+     #applepro p {
+
+         right: 350px;
+     }
+
+     #applepro img {
+
+         left: 181px;
+     }
+
+     #macpro img {
+         height: 450px;
+         left: 206.3px;
+
+     }
+
+     #macpro p {
+
+         right: 90px;
+         bottom: 190px;
+     }
+
+     #macpro h2 {
+
+         bottom: 130px;
+         right: 220px;
+         font-size: 22px;
+     }
+
+     #applelap img {
+         height: 450px;
+         left: 185.3px;
+     }
+
+     #applelap h2 {
+         right: 100px;
+     }
+
+     #applelap h4 {
+         right: 240px;
+         bottom: 22vh;
+     }
+
+     #applelap p {
+         right: 95vw;
+         bottom: 17.5vh;
+     }
+
+
+
+ }
